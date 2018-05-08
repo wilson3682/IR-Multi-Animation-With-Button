@@ -134,7 +134,7 @@ void changeEffect() {
   if (digitalRead (BUTTON) == HIGH) {
     selectedEffect++;
     EEPROM.put(0, selectedEffect);
-    asm volatile ("  jmp 0");
+   // asm volatile ("  jmp 0");
   }
 }
 //----------------------------- Animations -------------------------------------
